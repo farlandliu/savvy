@@ -54,3 +54,19 @@ All posts stored in the folder: `blog/`
 For example, the `svelte` related posts shall be in `blog/svelte`, the `tailwindcss` related posts shall be in `blog/tailwind`.
 
 This is convinient to find and write the post.
+
+## fixes
+
+1. 2024-03-06 font source error in chrome console
+
+```
+Refused to load the font 'https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff' 
+because it violates the following Content Security Policy directive: "font-src 'self'".
+```
+solution:
+
+In next.config.js, change the `font-src` value. [ref the doc](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/Sources#sources)
+
+```
+font-src  https://cdn.jsdelivr.net;
+```
