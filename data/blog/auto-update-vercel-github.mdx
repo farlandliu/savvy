@@ -1,0 +1,26 @@
+---
+title: Auto update Vercel after github pushing
+date: '2024-03-06'
+tags: ['nextjs', 'vercel', ]
+draft: false
+summary: Learn how to create and trigger deploy hooks to integrate Vercel deployments with Github.
+---
+
+When updating a new post, we need Vercel to auto deploy the new commit from github.
+
+## Create a Vercel deploy hook
+
+1. make sure the project is connected to github repo.
+2. Once the project is live, go to the `Settings page` > `GIt` menu.
+3. In the `Deploy Hooks` section, give a hook name and select the branch. 
+   
+![image](/static/images/post/vercel-hook-0.png)
+
+After submitting the form, you will see a URL that you can copy and use.
+
+![image](/static/images/post/vercel-hook-1.png)
+
+4. Go to you Github project, navigate to `Settings` tab > `webhooks` menu. Paste the URL in step 3 to the `Payload Url`,
+   and activate the webook.
+
+![image](/static/images/post/vercel-hook-3.png)
