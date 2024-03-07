@@ -18,11 +18,11 @@
 .code-highlight {
   @apply float-left min-w-full;
   @apply font-mono;
+  @apply text-lg;
 }
 
 .code-line {
   @apply -mx-4 block border-l-4 border-transparent pl-4 pr-4;
-  @apply font-mono;
 }
 
 .code-line.inserted {

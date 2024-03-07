@@ -19,6 +19,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.prose {
+  @apply text-lg;
+}
+.prose h2, h3, h4{
+ 
+  @apply  text-gray-800;
+  @apply  dark:text-gray-300;
+}
+
 .task-list-item::before {
   @apply hidden;
 }
